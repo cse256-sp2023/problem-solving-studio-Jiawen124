@@ -1,7 +1,11 @@
 // ---- Define your dialogs  and panels here ----
+perm = "effperm"
+act1 = define_new_effective_permissions(perm, add_info_col = true, which_permissions = null)
+act1
 
-
-
+select_button_text = " "
+act2 = define_new_user_select_field(perm, select_button_text, function(selected_user){})
+act2
 // ---- Display file structure ----
 
 // (recursively) makes and returns an html element (wrapped in a jquery object) for a given file object
